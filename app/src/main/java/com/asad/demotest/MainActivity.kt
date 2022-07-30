@@ -9,6 +9,10 @@ import androidx.compose.material.Surface
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.MutableLiveData
 import com.asad.demotest.ui.theme.DemoTestTheme
+import com.microsoft.appcenter.AppCenter
+import com.microsoft.appcenter.analytics.Analytics
+import com.microsoft.appcenter.crashes.Crashes
+
 class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,5 +28,6 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+        AppCenter.start(application,"c53436c7-4b91-4233-9b1f-d9bd9ee7c769", Analytics::class.java,Crashes::class.java)
     }
 }
