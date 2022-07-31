@@ -241,6 +241,7 @@ fun CalculatorView(
                         color = MaterialTheme.colors.onPrimary
                     )
                 }
+
                 //Equals Button
                 TextButton(
                     modifier = Modifier
