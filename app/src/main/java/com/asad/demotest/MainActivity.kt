@@ -1,6 +1,7 @@
 package com.asad.demotest
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -28,6 +29,7 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+        Log.e("","")
         AppCenter.start(application,"c53436c7-4b91-4233-9b1f-d9bd9ee7c769", Analytics::class.java,Crashes::class.java)
     }
 }
